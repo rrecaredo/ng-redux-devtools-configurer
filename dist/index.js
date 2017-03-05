@@ -75272,11 +75272,11 @@ exports.default = _angular2.default.module('ngReduxDevtoolsConfigurer', [_ngRedu
                     React.createElement(
                         "div",
                         null,
-                        React.createElement("developmentTools", null)
+                        React.createElement(DevToolsConfig.DevelopmentTools, null)
                     )
                 ), devTools);
             },
-            detTools: developmentTools
+            detTools: self.DevelopmentTools
         };
     }];
 }).name;

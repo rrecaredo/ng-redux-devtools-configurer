@@ -11,7 +11,7 @@ import ngRedux from 'ng-redux';
 
 export default angular.module('ngReduxDevtoolsConfigurer', [ngRedux])
 .provider('devToolsSync', function () {
-    this.DevelopmentTools = createDevTools(
+    this.developmentTools = createDevTools(
         <DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q" changeMonitorKey="ctrl-m"
                     defaultIsVisible={false}>
             <LogMonitor theme="tomorrow"/>
@@ -40,11 +40,11 @@ export default angular.module('ngReduxDevtoolsConfigurer', [ngRedux])
 
                 render(<Provider store={$ngRedux}>
                     <div>
-                        <DevToolsConfig.DevelopmentTools />
+                        <self.developmentTools />
                     </div>
                 </Provider>, devTools);
             },
-            detTools : self.DevelopmentTools
+            detTools : self.developmentTools
         } 
     }]
 }).name;
