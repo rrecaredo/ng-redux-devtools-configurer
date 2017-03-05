@@ -15,7 +15,7 @@
   "files": [
     "fake-dev-tools.js",
     "dist/"
-  ]
+  ],
   "author": "Ricardo Recaredo",
   "license": "ISC",
   "bugs": {
