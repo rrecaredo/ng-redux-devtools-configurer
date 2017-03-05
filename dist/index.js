@@ -75238,7 +75238,7 @@ var React = __webpack_require__(4);
 var Provider = __webpack_require__(136).Provider;
 var SliderMonitor = __webpack_require__(235);
 
-exports.default = _angular2.default.module('ngReduxDevtoolsConfig', [_ngRedux2.default]).provider('devToolsSync', function () {
+exports.default = _angular2.default.module('ngReduxDevtoolsConfigurer', [_ngRedux2.default]).provider('devToolsSync', function () {
     this.DevelopmentTools = createDevTools(React.createElement(
         DockMonitor,
         { toggleVisibilityKey: "ctrl-h", changePositionKey: "ctrl-q", changeMonitorKey: "ctrl-m",

@@ -40,11 +40,11 @@ export default angular.module('ngReduxDevtoolsConfigurer', [ngRedux])
 
                 render(<Provider store={$ngRedux}>
                     <div>
-                        <developmentTools />
+                        <DevToolsConfig.DevelopmentTools />
                     </div>
                 </Provider>, devTools);
             },
-            detTools : developmentTools
+            detTools : self.DevelopmentTools
         } 
     }]
 }).name;

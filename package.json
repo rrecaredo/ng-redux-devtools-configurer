@@ -1,6 +1,6 @@
 {
   "name": "ng-redux-devtools-configurer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Helper for isolating redux dev tools from angular applications",
   "main": "dist/index.js",
   "scripts": {
