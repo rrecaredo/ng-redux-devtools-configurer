@@ -31,7 +31,6 @@ export default angular.module('ngReduxDevtoolsConfig', [ngRedux])
                 DockMonitor.prototype.componentDidUpdate = function () {
                     $rootScope.$evalAsync();
 
-export default angular.module('ngReduxDevtoolsConfig', [ngRedux])
                     if (componentDidUpdate) {
                         componentDidUpdate.apply(this, arguments);
                     }
