@@ -75239,7 +75239,7 @@ var Provider = __webpack_require__(136).Provider;
 var SliderMonitor = __webpack_require__(235);
 
 exports.default = _angular2.default.module('ngReduxDevtoolsConfigurer', [_ngRedux2.default]).provider('devToolsSync', function () {
-    this.DevelopmentTools = createDevTools(React.createElement(
+    this.developmentTools = createDevTools(React.createElement(
         DockMonitor,
         { toggleVisibilityKey: "ctrl-h", changePositionKey: "ctrl-q", changeMonitorKey: "ctrl-m",
             defaultIsVisible: false },
@@ -75272,11 +75272,11 @@ exports.default = _angular2.default.module('ngReduxDevtoolsConfigurer', [_ngRedu
                     React.createElement(
                         "div",
                         null,
-                        React.createElement(DevToolsConfig.DevelopmentTools, null)
+                        React.createElement(self.developmentTools, null)
                     )
                 ), devTools);
             },
-            detTools: self.DevelopmentTools
+            detTools: self.developmentTools
         };
     }];
 }).name;
