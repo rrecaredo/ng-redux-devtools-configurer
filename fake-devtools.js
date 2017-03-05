@@ -1,7 +1,9 @@
-export default angular.module('ngReduxDevtoolsConfigurer')
+module.exports = angular.module('ngReduxDevtoolsConfigurer', [])
 .provider('devToolsSync', function () {
-	this.$get = () => {
-		start: () => {},
-		devTools: undefined
+	this.$get =  function() {
+		return {
+			start: function() {},
+			devTools: undefined
+		}
 	};
 }).name;
