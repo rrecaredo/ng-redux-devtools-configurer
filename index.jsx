@@ -9,17 +9,15 @@ let SliderMonitor        = require("redux-slider-monitor");
 import angular from 'angular';
 import ngRedux from 'ng-redux';
 
-let developmentTools = createDevTools(
+export default angular.module('ngReduxDevtoolsConfig', [ngRedux])
+.provider('devToolsSync', function () {
+    this.DevelopmentTools = createDevTools(
         <DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q" changeMonitorKey="ctrl-m"
                     defaultIsVisible={false}>
             <LogMonitor theme="tomorrow"/>
             <SliderMonitor keyboardEnabled/>
         </DockMonitor>
     );
-
-export default angular.module('ngReduxDevtoolsConfig', [ngRedux])
-.provider('devToolsSync', function () {
-    this.D
 
     let self = this;
 
@@ -33,6 +31,7 @@ export default angular.module('ngReduxDevtoolsConfig', [ngRedux])
                 DockMonitor.prototype.componentDidUpdate = function () {
                     $rootScope.$evalAsync();
 
+export default angular.module('ngReduxDevtoolsConfig', [ngRedux])
                     if (componentDidUpdate) {
                         componentDidUpdate.apply(this, arguments);
                     }

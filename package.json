@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rrecaredo/ng-redux-devtools-config.git"
+    "url": "git+https://github.com/rrecaredo/ng-redux-devtools-configurer.git"
   },
   "author": "Ricardo Recaredo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rrecaredo/ng-redux-devtools-config/issues"
+    "url": "https://github.com/rrecaredo/ng-redux-devtools-configurer/issues"
   },
-  "homepage": "https://github.com/rrecaredo/ng-redux-devtools-config#readme",
+  "homepage": "https://github.com/rrecaredo/ng-redux-devtools-configurer#readme",
   "devDependencies": {
     "angular": "^1.5.6",
     "babel-core": "6.23.1",
