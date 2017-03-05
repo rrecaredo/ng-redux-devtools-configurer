@@ -9,7 +9,7 @@ let SliderMonitor        = require("redux-slider-monitor");
 import angular from 'angular';
 import ngRedux from 'ng-redux';
 
-export default angular.module('ngReduxDevtoolsConfig', [ngRedux])
+export default angular.module('ngReduxDevtoolsConfigurer', [ngRedux])
 .provider('devToolsSync', function () {
     this.DevelopmentTools = createDevTools(
         <DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q" changeMonitorKey="ctrl-m"
