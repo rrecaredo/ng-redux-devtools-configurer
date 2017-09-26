@@ -1,12 +1,10 @@
-let createDevTools       = require("redux-devtools").createDevTools;
-let render               = require("react-dom").render;
-let LogMonitor           = require("redux-devtools-log-monitor").default;
-let DockMonitor          = require("redux-devtools-dock-monitor").default;
-let React                = require("react");
-let Provider             = require("react-redux").Provider;
-let SliderMonitor        = require("redux-slider-monitor");
+let createDevTools = require("redux-devtools").createDevTools;
+let render         = require("react-dom").render;
+let LogMonitor     = require("redux-devtools-log-monitor").default;
+let DockMonitor    = require("redux-devtools-dock-monitor").default;
+let React          = require("react");
+let Provider       = require("react-redux").Provider;
 
-import angular from 'angular';
 import ngRedux from 'ng-redux';
 
 export default angular.module('ngReduxDevtoolsConfigurer', [ngRedux])
@@ -15,7 +13,6 @@ export default angular.module('ngReduxDevtoolsConfigurer', [ngRedux])
         <DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q" changeMonitorKey="ctrl-m"
                     defaultIsVisible={false}>
             <LogMonitor theme="tomorrow"/>
-            <SliderMonitor keyboardEnabled/>
         </DockMonitor>
     );
 
